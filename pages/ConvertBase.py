@@ -54,7 +54,7 @@ class Component:
     def convertList(base_next):
 
         def create_clickable_link(text, key):
-            url = f"http://localhost:8501/ConvertBase/?convert_from={key}"
+            url = f"https://convert-app.streamlit.app/ConvertBase/?convert_from={key}"
             return f"[{text}]({url})"
         
         col1, col2 = st.columns(2)
